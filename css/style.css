@@ -3,3 +3,27 @@ body {
 	background-color: #000000;
 	color: #ffffff;
 }
+
+/* unvisited link */
+a:link {
+    color: #6b6b6b;
+}
+
+/* visited link */
+a:visited {
+    color: #6b6b6b;
+}
+
+/* mouse over link */
+a:hover {
+    color: #6b6b6b;
+}
+
+/* selected link */
+a:active {
+    color: #6b6b6b;
+}
+
+.fa {
+	font-size: 2em;	
+}
