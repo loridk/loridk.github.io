@@ -25,5 +25,9 @@ a:active {
 }
 
 .fa {
-	font-size: 2em;	
+	font-size: 3em;	
+}
+
+.top_space {
+	margin-top: 5%;	
 }
