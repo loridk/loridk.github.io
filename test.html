@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <title>Test</title>
+</head>
+<body>
+
+
+<button>
+    Press
+</button>
+
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            var num = prompt("Enter a number");
+            func(num);
+        });
+    });
+
+    function func(x) {
+        var answer = x*2;
+        alert(answer);
+        setTimeout(function() {
+            alert("fuck off");
+        }, 3000);
+    }
+</script>
+
+<style>
+    div {
+        position: relative;
+        left: 50%;
+        height: 300px;
+        width: 300px;
+        background-color: blue;
+    }
+    button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+</style>
+
+</body>
+</html>
