@@ -79,4 +79,4 @@ fabric.properties
 
 sota
 steve
-.htpasswd
+steve/.htpasswd
