@@ -583,7 +583,7 @@
                 <img class="img-responsive" src="img/tech/bootstraplogo.png" alt="Bootstrap">
                 <img class="img-responsive" src="img/tech/jquery.png" alt="jQuery">
                 <img class="img-responsive" src="img/tech/php.png" alt="PHP">
-		<img class="img-responsive" src="img/tech/wordpress.png" alt="Wordpress">
+				<img class="img-responsive" src="img/tech/wordpress.png" alt="Wordpress">
             </div>
 
             <div class="typing-animation">
@@ -593,27 +593,27 @@
             <div class="row">
                 <div class="col-xs-2 col-sm-1">
                     <div class="sm">
-                        <a href="mailto:loridk@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                        <a href="mailto:loridk@gmail.com" title="Email"><i class="fa fa-envelope" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <div class="col-xs-2 col-sm-1">
                     <div class="sm">
-                        <a href="https://stackoverflow.com/story/loridk" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+                        <a href="https://stackoverflow.com/story/loridk" title="Stack Overflow" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <div class="col-xs-2 col-sm-1">
                     <div class="sm">
-                        <a href="https://github.com/loridk" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        <a href="https://github.com/loridk" title="Git Hub" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <div class="col-xs-2 col-sm-1">
                     <div class="sm">
-                        <a href="https://bitbucket.org/loridk/" target="_blank"><i class="fa fa-bitbucket" aria-hidden="true"></i></a>
+                        <a href="https://bitbucket.org/loridk/" title="Bit Bucket" target="_blank"><i class="fa fa-bitbucket" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <div class="col-xs-2 col-sm-1">
                     <div class="sm">
-                        <a href="https://www.linkedin.com/in/denisedunford/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/in/loridunford/" title="Linked In" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
@@ -629,7 +629,7 @@
 
 <div class="container top_space" style="border-top: 2px dashed #42f44e;">
     <footer style="margin-top: 2%;">
-        <p>&copy;2020 DK Devs | Lori Dunford</p>
+        <p>&copy;<span id="year"></span> DK Devs | Lori Dunford</p>
     </footer>
 </div> <!-- /container -->
 
@@ -648,6 +648,10 @@
 
     <script>
         $(document).ready(function(){
+			const d = new Date();
+			let year = d.getFullYear();
+			$('#year').html(year);
+			
 			$('.sites').slick({
 			  slidesToShow: 1,
 			  slidesToScroll: 1,
