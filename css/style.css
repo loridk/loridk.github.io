@@ -39,6 +39,19 @@ a:active {
 	margin-top: 2%;	
 }
 
+.extras {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display:         flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.cert {
+    max-width: 300px;
+}
+
 .tech {
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -50,6 +63,7 @@ a:active {
 }
 
 .tech img {
+    margin: 20px 10px;
 	height: 100px;
 }
 
