@@ -52,7 +52,7 @@ a:active {
     max-width: 300px;
 }
 
-.tech {
+.tech, .profile-links {
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
